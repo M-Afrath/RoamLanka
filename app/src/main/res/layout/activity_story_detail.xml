@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/storyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:textSize="24sp"
+            android:paddingBottom="6dp"/>
+
+        <!-- LOCATION -->
+        <TextView
+            android:id="@+id/storyLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/storyDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#B0BEC5"/>
+
+        <!-- Comment Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1565C0"
+            android:paddingBottom="8dp"/>
+
+        <!-- COMMENT INPUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/commentInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Write a comment..."
+                android:background="#FFFFFF"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Send"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1976D2"/>
+        </LinearLayout>
+
+        <!-- COMMENTS -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315277937434",
+    "project_id": "roamlanka-9c8f8",
+    "storage_bucket": "roamlanka-9c8f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315277937434:android:99ea222a0f22d9dc84faa3",
+        "android_client_info": {
+          "package_name": "com.afrath.roamlanka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6e2-klXXfeuNDJw2XKMgoXMxA4SKTBO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
