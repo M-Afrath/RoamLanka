@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/splash"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="32dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoamLanka"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tagline broken into three TextViews -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan trips"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:shadowColor="#66000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1" />
+
+        <TextView
+            android:id="@+id/txtShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share stories"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:shadowColor="#66000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1" />
+
+        <TextView
+            android:id="@+id/txtExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore destinations"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:shadowColor="#66000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1" />
+    </LinearLayout>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1565C0"
+        android:layout_marginTop="32dp"
+        android:padding="12dp" />
+</LinearLayout>
